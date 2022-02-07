@@ -6,6 +6,30 @@ append config
     currentDescription = 'New website'
     currentUrl = 'index.html'
 
+block header
+  +page-header()
+    .page-header__text
+      h1.page-header__heading Around the world
+      p.page-header__paragraph
+        | "Traveling - it leaves you speechless, then turns you into a storyteller"
+
+    +picture({
+      'img': 'page-header-01',
+      'alt': 'Baloon',
+      'lg': false,
+      'ext': 'png'
+    }, 'page-header__img').page-header__img-wrapper
+
+    +logo('/').page-header__logo
+      span t
+      span h
+      span e
+      span r
+      span o
+      span a
+      span d
+  ///.page-header
+
 block content
 
   h1 Top news

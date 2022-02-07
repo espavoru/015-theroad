@@ -26,6 +26,16 @@ $color-gh:                    #24292e;
 
 // Семантические цвета
 
+/* stylelint-disable */
+:root {
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+}
+/* stylelint-enable */
+
 $text-color:                  #283645;
 $text-color-headings:         $black;
 $text-color-muted:            $gray;
@@ -59,7 +69,7 @@ $line-height:                 1.5;
 
 $typo-margin-vertical:        1em;
 
-$font-family:                 'Open Sans', -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family:                 Vollkorn, -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-family--monospace:      SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 // Georgia, Times New Roman, Times, serif
 

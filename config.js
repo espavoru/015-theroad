@@ -41,7 +41,7 @@ let config = {
     'blocks': 'src/blocks/'
   },
   'optionsGHpages': {
-    'remote': 'git_remote', // options for github-pages
+    'remote': 'theroad', // options for github-pages
   }
 };
 
