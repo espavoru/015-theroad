@@ -1,0 +1,39 @@
+// В этом файле должны быть стили для БЭМ-блока popular-tours, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.popular-tours {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+
+  &__heading {
+    margin-bottom: 8rem;
+
+    font-size: 8rem;
+    text-align: center;
+    text-shadow: 0 0.1rem 0.2rem var(--primary-color);
+    color: var(--primary-color);
+  }
+
+  &__container {
+    @include container(
+      $xs-grid-gutter: 0,
+      $sm-grid-gutter: 0,
+      $md-grid-gutter: 0
+    );
+  }
+
+  &__row {
+    @include row($xl-grid-gutter: 0);
+  }
+
+  &__col {
+    @include col(md, 4, 12, 0);
+
+    display: flex;
+    justify-content: center;
+  }
+}

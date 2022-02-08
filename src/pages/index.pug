@@ -7,7 +7,7 @@ append config
     currentUrl = 'index.html'
 
 block header
-  +page-header()
+  +page-header()#page-header
     .page-header__text
       h1.page-header__heading Around the world
       p.page-header__paragraph
@@ -32,12 +32,77 @@ block header
 
 block content
 
-  h1 Top news
+  section.popular-tours#popular-tours
+    h2.popular-tours__heading The Most Popular Tours
 
-  ol
-    li Man Found Having Tea Party With Donkey Again
-    li Woman With Epic Tattoo Arrested for 37th Time
-    li Viral Photo of Donkey Had Been Photoshopped
-    li Man Buys Hats For Low Income Local Family
-    li Man Jailed For Threatening Wife With Crumpled Hawk
-    li Small Tornado Forcast in Northern Regions
+    .popular-tours__container
+      .popular-tours__row
+
+        .popular-tours__col
+          .card
+            .card__front
+              +picture({
+                'img': 'popular-tours-01',
+                'alt': 'Forest',
+                'lg': false,
+                'ext': 'jpg'
+              }, 'card__img').card__img-wrapper
+              h3.card__name The wild forest
+              ul.card__list
+                li.card__list-item 7 days tour
+                li.card__list-item Up to 20 people
+                li.card__list-item 4 tour guides
+                li.card__list-item Sleep in private tents
+                li.card__list-item Difficulty: medium
+              button.card__nav-btn price &gt;&gt;
+            .card__back
+              button.card__nav-btn &lt;&lt; back
+              h4.card__price $399
+              +btn('Booking').card__btn(href='#')
+
+        .popular-tours__col
+          .card
+            .card__front
+              +picture({
+                'img': 'popular-tours-02',
+                'alt': 'River',
+                'lg': false,
+                'ext': 'jpg'
+              }, 'card__img').card__img-wrapper
+              h3.card__name Along the river
+              ul.card__list
+                li.card__list-item 9 days tour
+                li.card__list-item Up to 30 people
+                li.card__list-item 7 tour guides
+                li.card__list-item Sleep in private tents
+                li.card__list-item Difficulty: hard
+              button.card__nav-btn price &gt;&gt;
+            .card__back
+              button.card__nav-btn &lt;&lt; back
+              h4.card__price $499
+              +btn('Booking').card__btn(href='#')
+
+        .popular-tours__col
+          .card
+            .card__front
+              +picture({
+                'img': 'popular-tours-03',
+                'alt': 'Sea',
+                'lg': false,
+                'ext': 'jpg'
+              }, 'card__img').card__img-wrapper
+              h3.card__name The island beach
+              ul.card__list
+                li.card__list-item 5 days tour
+                li.card__list-item Up to 40 people
+                li.card__list-item 8 tour guides
+                li.card__list-item Sleep in hotel
+                li.card__list-item Difficulty: easy
+              button.card__nav-btn price &gt;&gt;
+            .card__back
+              button.card__nav-btn &lt;&lt; back
+              h4.card__price $599
+              +btn('Booking').card__btn(href='#')
+
+    ///.popular-tours__wrapper
+  ///.popular-tours
