@@ -103,6 +103,41 @@ block content
               button.card__nav-btn &lt;&lt; back
               h4.card__price $599
               +btn('Booking').card__btn(href='#')
-
     ///.popular-tours__wrapper
   ///.popular-tours
+
+  section.stories#stories
+    .stories__video-container
+      //- https://coverr.co/ more free videos for bg
+      video.stories__video-bg(autoplay, muted, loop, src='video/stories.mp4')
+
+    .stories__wrapper
+
+      .stories__item-bg
+        .stories__item
+          +picture({
+            'img': 'stories-01',
+            'alt': 'Customer image',
+            'lg': false,
+            'ext': 'jpg'
+          }, 'stories__img').stories__img-wrapper
+          .stories__text
+            h2.stories__heading
+              | These were the best days of this year
+            p.stories__paragraph
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum optio fugit rerum repellendus pariatur rem ratione corrupti atque adipisci aliquid possimus et facilis provident ullam praesentium, laboriosam omnis quidem libero.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!
+
+      .stories__item-bg
+        .stories__item
+          +picture({
+            'img': 'stories-02',
+            'alt': 'Customer image',
+            'lg': false,
+            'ext': 'jpg'
+          }, 'stories__img').stories__img-wrapper
+          .stories__text
+            h2.stories__heading
+              | I enjoyed this great tour
+            p.stories__paragraph
+              | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum optio fugit rerum repellendus pariatur rem ratione corrupti atque adipisci aliquid possimus et facilis provident ullam praesentium, laboriosam omnis quidem libero.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!
+  ///.stories
