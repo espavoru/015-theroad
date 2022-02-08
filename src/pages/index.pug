@@ -141,3 +141,27 @@ block content
             p.stories__paragraph
               | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum optio fugit rerum repellendus pariatur rem ratione corrupti atque adipisci aliquid possimus et facilis provident ullam praesentium, laboriosam omnis quidem libero.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!
   ///.stories
+
+  section.contact#contact
+    .contact__inner
+      h2.contact__heading Contact Us
+
+      .contact__row
+        form.contact__form
+          .contact__input-group
+            label Full Name *
+            input.contact__input(type='text', name='name', placeholder='Enter Your Name')
+          .contact__input-groups
+            .contact__input-group
+              label Email *
+              input.contact__input(type='email', name='email', placeholder='Enter Your Email')
+            .contact__input-group
+              label Phone
+              input.contact__input(type='tel', name='phone', placeholder='Enter Phone Number')
+          .contact__input-group
+            label Message
+            textarea.contact__message(name='message', placeholder='Your Message Here...')
+          input.contact__submit(type='submit', value='Submit')
+
+        ///.contact__form
+  ///.contact
