@@ -119,6 +119,17 @@ eval("function _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol ===
 
 /***/ }),
 
+/***/ "./src/blocks/popular-tours/popular-tours.js":
+/*!***************************************************!*\
+  !*** ./src/blocks/popular-tours/popular-tours.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Array.from(document.querySelectorAll('.card__nav-btn')).forEach(function (item) {\n  item.onclick = function () {\n    item.parentElement.parentElement.classList.toggle('change');\n  };\n});\n\n//# sourceURL=webpack:///./src/blocks/popular-tours/popular-tours.js?");
+
+/***/ }),
+
 /***/ "./src/js/entry.js":
 /*!*************************!*\
   !*** ./src/js/entry.js ***!
@@ -126,7 +137,7 @@ eval("function _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol ===
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/popular-tours/popular-tours.js */ \"./src/blocks/popular-tours/popular-tours.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 

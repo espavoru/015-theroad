@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <body><noscript>Enable JavaScript please.</noscript>
   <div class="page__inner">
     <div class="page__content">
-      <header class="page-header" role="banner">
+      <header class="page-header" role="banner" id="page-header">
         <div class="page-header__inner">
           <div class="page-header__text">
             <h1 class="page-header__heading">Around the world</h1>
@@ -78,15 +78,75 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </header>
       <!--/.page-header-->
-      <h1>Top news</h1>
-      <ol>
-        <li>Man Found Having Tea Party With Donkey Again</li>
-        <li>Woman With Epic Tattoo Arrested for 37th Time</li>
-        <li>Viral Photo of Donkey Had Been Photoshopped</li>
-        <li>Man Buys Hats For Low Income Local Family</li>
-        <li>Man Jailed For Threatening Wife With Crumpled Hawk</li>
-        <li>Small Tornado Forcast in Northern Regions</li>
-      </ol>
+      <section class="popular-tours" id="popular-tours">
+        <h2 class="popular-tours__heading">The Most Popular Tours</h2>
+        <div class="popular-tours__container">
+          <div class="popular-tours__row">
+            <div class="popular-tours__col">
+              <div class="card">
+                <div class="card__front">
+                  <picture class="picture card__img-wrapper">
+                    <source media="(min-width: 0)" type="image/webp" srcset="img/popular-tours-01-640p.webp, img/popular-tours-01-1280p.webp 2x" /><img class="card__img" alt="Forest" width="640" src="img/popular-tours-01-640p.jpg" srcset="img/popular-tours-01-1280p.jpg 2x" />
+                  </picture>
+                  <h3 class="card__name">The wild forest</h3>
+                  <ul class="card__list">
+                    <li class="card__list-item">7 days tour</li>
+                    <li class="card__list-item">Up to 20 people</li>
+                    <li class="card__list-item">4 tour guides</li>
+                    <li class="card__list-item">Sleep in private tents</li>
+                    <li class="card__list-item">Difficulty: medium</li>
+                  </ul><button class="card__nav-btn">price &gt;&gt;</button>
+                </div>
+                <div class="card__back"><button class="card__nav-btn">&lt;&lt; back</button>
+                  <h4 class="card__price">$399</h4><a class="btn card__btn" href="#">Booking</a>
+                </div>
+              </div>
+            </div>
+            <div class="popular-tours__col">
+              <div class="card">
+                <div class="card__front">
+                  <picture class="picture card__img-wrapper">
+                    <source media="(min-width: 0)" type="image/webp" srcset="img/popular-tours-02-640p.webp, img/popular-tours-02-1280p.webp 2x" /><img class="card__img" alt="River" width="640" src="img/popular-tours-02-640p.jpg" srcset="img/popular-tours-02-1280p.jpg 2x" />
+                  </picture>
+                  <h3 class="card__name">Along the river</h3>
+                  <ul class="card__list">
+                    <li class="card__list-item">9 days tour</li>
+                    <li class="card__list-item">Up to 30 people</li>
+                    <li class="card__list-item">7 tour guides</li>
+                    <li class="card__list-item">Sleep in private tents</li>
+                    <li class="card__list-item">Difficulty: hard</li>
+                  </ul><button class="card__nav-btn">price &gt;&gt;</button>
+                </div>
+                <div class="card__back"><button class="card__nav-btn">&lt;&lt; back</button>
+                  <h4 class="card__price">$499</h4><a class="btn card__btn" href="#">Booking</a>
+                </div>
+              </div>
+            </div>
+            <div class="popular-tours__col">
+              <div class="card">
+                <div class="card__front">
+                  <picture class="picture card__img-wrapper">
+                    <source media="(min-width: 0)" type="image/webp" srcset="img/popular-tours-03-640p.webp, img/popular-tours-03-1280p.webp 2x" /><img class="card__img" alt="Sea" width="640" src="img/popular-tours-03-640p.jpg" srcset="img/popular-tours-03-1280p.jpg 2x" />
+                  </picture>
+                  <h3 class="card__name">The island beach</h3>
+                  <ul class="card__list">
+                    <li class="card__list-item">5 days tour</li>
+                    <li class="card__list-item">Up to 40 people</li>
+                    <li class="card__list-item">8 tour guides</li>
+                    <li class="card__list-item">Sleep in hotel</li>
+                    <li class="card__list-item">Difficulty: easy</li>
+                  </ul><button class="card__nav-btn">price &gt;&gt;</button>
+                </div>
+                <div class="card__back"><button class="card__nav-btn">&lt;&lt; back</button>
+                  <h4 class="card__price">$599</h4><a class="btn card__btn" href="#">Booking</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.popular-tours__wrapper-->
+      </section>
+      <!--/.popular-tours-->
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner"></div>
       </footer>
