@@ -98,6 +98,11 @@
       z-index: 200;
       top: 6.5rem;
       left: 6.5rem;
+
+      @media (max-width: 650px) {
+        top: 2.5rem;
+        left: 2.5rem;
+      }
     }
 
     &--close {
@@ -105,6 +110,10 @@
       z-index: 300;
       top: 2.5rem;
       right: 3rem;
+
+      @media (max-width: 650px) {
+        right: 4rem;
+      }
 
       #{$block-name}__line:first-child {
         transform: rotate(40deg);
@@ -140,6 +149,14 @@
     opacity: 0;
     background-color: rgba(255, 255, 255, 0.7);
 
+    @media (max-width: 1200px) {
+      padding: 3.5rem;
+
+      @media (max-width: 650px) {
+        padding: 0;
+      }
+    }
+
     .change & {
       bottom: 0;
 
@@ -151,6 +168,10 @@
   &__list {
     display: flex;
     height: 100%;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
 
   &__link {
@@ -169,6 +190,10 @@
 
     transition: all 0.3s;
     opacity: 0.8;
+
+    @media (max-width: 1000px) {
+      flex-grow: 1;
+    }
 
     &:hover {
       color: var(--primary-color);

@@ -15,6 +15,10 @@
   max-width: 35rem;
   perspective: 150rem;
 
+  @media (max-width: 1200px) {
+    margin: 3rem 0;
+  }
+
   &__front {
     position: relative;
     z-index: 10;

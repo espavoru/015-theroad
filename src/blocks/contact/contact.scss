@@ -43,6 +43,10 @@
     letter-spacing: 0.5rem;
     text-shadow: 0 1rem 2rem #000;
     color: var(--white-color);
+
+    @media (max-width: 650px) {
+      font-size: 6rem;
+    }
   }
 
   &__inner {
@@ -59,6 +63,9 @@
 
   &__form {
     @include col(xl, 5, 12, 10rem);
+    @include col(lg, 7, 12, 10rem);
+    @include col(md, 8, 12, 10rem);
+    @include col(xs, 11, 12, 10rem);
 
     display: flex;
     flex-direction: column;
@@ -71,6 +78,11 @@
 
     box-shadow: 0 1rem 3rem #000;
     background-color: rgba(255, 255, 255, 0.95);
+
+    @media (max-width: 650px) {
+      height: 40rem;
+      padding: 2rem;
+    }
   }
 
   &__input-group {
@@ -120,8 +132,16 @@
     justify-content: space-between;
     width: 100%;
 
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+
     #{$block-name}__input-group {
       width: 48.5%;
+
+      @media (max-width: 650px) {
+        width: 100%;
+      }
     }
   }
 

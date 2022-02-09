@@ -15,6 +15,10 @@
     height: calc(100vh - 7rem);
     perspective: 100rem;
 
+    @media (max-width: 650px) {
+      height: 100vh;
+    }
+
     @media (min-width: $screen-xs) {
       background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)), url('../img/page-header-02-640p.webp');
       background-repeat: no-repeat;
@@ -91,12 +95,25 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 0 0.3rem 0.5rem var(--grey-color);
+
+    @media (max-width: 1000px) {
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__heading {
     margin: 0;
     font-size: 8rem;
     color: var(--white-color);
+
+    @media (max-width: 1000px) {
+      font-size: 6rem;
+      min-width: 45rem;
+    }
   }
 
   &__paragraph {
@@ -106,6 +123,14 @@
     font-size: 3rem;
     font-weight: 500;
     color: var(--secondary-color);
+
+    @media (max-width: 1000px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 
   &__img-wrapper.picture {
