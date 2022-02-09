@@ -119,6 +119,17 @@ eval("function _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol ===
 
 /***/ }),
 
+/***/ "./src/blocks/navbar/navbar.js":
+/*!*************************************!*\
+  !*** ./src/blocks/navbar/navbar.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var colors = ['#6495ed', '#7fffd4', '#ffa07a', '#f08080', '#afeeee'];\nvar content = document.querySelector('.page__content');\nvar i = 0;\nArray.from(document.querySelectorAll('.navbar__link')).forEach(function (item) {\n  item.style.cssText = \"background-color: \".concat(colors[i++]);\n});\ndocument.querySelector('.navbar__icon--open').addEventListener('click', function () {\n  content.classList.add('change');\n});\ndocument.querySelector('.navbar__icon--close').addEventListener('click', function () {\n  content.classList.remove('change');\n});\n\n//# sourceURL=webpack:///./src/blocks/navbar/navbar.js?");
+
+/***/ }),
+
 /***/ "./src/blocks/popular-tours/popular-tours.js":
 /*!***************************************************!*\
   !*** ./src/blocks/popular-tours/popular-tours.js ***!
@@ -137,7 +148,7 @@ eval("Array.from(document.querySelectorAll('.card__nav-btn')).forEach(function (
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/popular-tours/popular-tours.js */ \"./src/blocks/popular-tours/popular-tours.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/navbar/navbar.js */ \"./src/blocks/navbar/navbar.js\");\n\n__webpack_require__(/*! ../blocks/popular-tours/popular-tours.js */ \"./src/blocks/popular-tours/popular-tours.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 

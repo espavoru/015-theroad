@@ -19,7 +19,7 @@
   <meta name="msapplication-navbutton-color" content="#000">
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
   <title>Home</title>
-  <meta name="description" content="New website">
+  <meta name="description" content="The Road">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">
@@ -66,7 +66,22 @@ document.addEventListener("DOMContentLoaded", () => {
 <body><noscript>Enable JavaScript please.</noscript>
   <div class="page__inner">
     <div class="page__content">
-      <header class="page-header" role="banner" id="page-header">
+      <div class="navbar__icon navbar__icon--open">
+        <div class="navbar__line"></div>
+        <div class="navbar__line"></div>
+        <div class="navbar__line"></div>
+      </div>
+      <div class="navbar__wrapper">
+        <nav class="navbar">
+          <div class="navbar__icon navbar__icon--close">
+            <div class="navbar__line"></div>
+            <div class="navbar__line"></div>
+          </div>
+          <div class="navbar__list"><a class="navbar__link" href="#home">Home</a><a class="navbar__link" href="#popular-tours">Tours</a><a class="navbar__link" href="#stories">Clients</a><a class="navbar__link" href="#contact">Contact</a><a class="navbar__link" href="#home">Blog</a></div>
+        </nav>
+      </div>
+      <!--/.navbar__wrapper-->
+      <header class="page-header" role="banner" id="home">
         <div class="page-header__inner">
           <div class="page-header__text">
             <h1 class="page-header__heading">Around the world</h1>
@@ -192,8 +207,9 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </section>
       <!--/.contact-->
-      <footer class="page-footer" role="contentinfo">
-        <div class="page-footer__inner"></div>
+      <footer class="page-footer">
+        <div class="page-footer__list"><a class="page-footer__link" href="#home">Home</a><a class="page-footer__link" href="#popular-tours">Tours</a><a class="page-footer__link" href="#stories">Clients</a><a class="page-footer__link" href="#contact">Contact</a><a class="page-footer__link" href="#home">Blog</a></div>
+        <div class="page-footer__paragraph">Copyright &copy; CodeAndCreate All Rights Reserved</div>
       </footer>
     </div>
   </div><script defer src="js/bundle.js">
