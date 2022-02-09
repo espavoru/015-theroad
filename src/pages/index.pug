@@ -7,7 +7,7 @@ append config
     currentUrl = 'index.html'
 
 block header
-  +page-header()#page-header
+  +page-header()#home
     .page-header__text
       h1.page-header__heading Around the world
       p.page-header__paragraph
@@ -162,6 +162,16 @@ block content
             label Message
             textarea.contact__message(name='message', placeholder='Your Message Here...')
           input.contact__submit(type='submit', value='Submit')
-
         ///.contact__form
   ///.contact
+
+block footer
+  footer.page-footer
+    .page-footer__list
+      a.page-footer__link(href='#home') Home
+      a.page-footer__link(href='#popular-tours') Tours
+      a.page-footer__link(href='#stories') Clients
+      a.page-footer__link(href='#contact') Contact
+      a.page-footer__link(href='#home') Blog
+    .page-footer__paragraph
+      | Copyright &copy; CodeAndCreate All Rights Reserved
