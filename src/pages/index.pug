@@ -3,10 +3,29 @@ extends ../pug/layout.pug
 append config
   -
     currentTitle = 'Home'
-    currentDescription = 'New website'
+    currentDescription = 'The Road'
     currentUrl = 'index.html'
 
 block header
+  .navbar__icon.navbar__icon--open
+    .navbar__line
+    .navbar__line
+    .navbar__line
+
+  .navbar__wrapper
+    nav.navbar
+      .navbar__icon.navbar__icon--close
+        .navbar__line
+        .navbar__line
+
+      .navbar__list
+        a.navbar__link(href='#home') Home
+        a.navbar__link(href='#popular-tours') Tours
+        a.navbar__link(href='#stories') Clients
+        a.navbar__link(href='#contact') Contact
+        a.navbar__link(href='#home') Blog
+  ///.navbar__wrapper
+
   +page-header()#home
     .page-header__text
       h1.page-header__heading Around the world
